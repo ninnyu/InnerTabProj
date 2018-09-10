@@ -1,4 +1,4 @@
-package com.example.potatopaloozac.innertabproj;
+package com.example.potatopaloozac.innertabproj.tabLayoutFragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,8 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.potatopaloozac.innertabproj.Adapters.PagerBottom;
+import com.example.potatopaloozac.innertabproj.R;
 
-public class FragmentTopOne extends Fragment {
+public class FragmentTopTwo extends Fragment {
     PagerBottom pagerBottom;
     TabLayout tabLayout;
     ViewPager viewPager;
@@ -19,10 +21,10 @@ public class FragmentTopOne extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.top_one, container, false);
+        View v = inflater.inflate(R.layout.top_two, container, false);
 
-        tabLayout = v.findViewById(R.id.topTab1Layout);
-        viewPager = v.findViewById(R.id.topTab1Pager);
+        tabLayout = v.findViewById(R.id.topTab2Layout);
+        viewPager = v.findViewById(R.id.topTab2Pager);
         pagerBottom = new PagerBottom(getChildFragmentManager(),2);
 
         viewPager.setAdapter(pagerBottom);
@@ -31,6 +33,4 @@ public class FragmentTopOne extends Fragment {
 
         return v;
     }
-
-
 }

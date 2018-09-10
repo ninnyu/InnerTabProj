@@ -1,4 +1,4 @@
-package com.example.potatopaloozac.innertabproj;
+package com.example.potatopaloozac.innertabproj.tabLayoutFragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,11 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragmentBottomTwo extends Fragment {
+import com.example.potatopaloozac.innertabproj.R;
+
+public class FragmentBottomOne extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.bottom_two, container, false);
+        View v = inflater.inflate(R.layout.bottom_one, container, false);
         return v;
     }
 }

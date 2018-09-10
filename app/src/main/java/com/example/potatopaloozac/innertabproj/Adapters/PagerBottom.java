@@ -1,9 +1,12 @@
-package com.example.potatopaloozac.innertabproj;
+package com.example.potatopaloozac.innertabproj.Adapters;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.potatopaloozac.innertabproj.tabLayoutFragments.FragmentBottomOne;
+import com.example.potatopaloozac.innertabproj.tabLayoutFragments.FragmentBottomTwo;
 
 public class PagerBottom extends FragmentPagerAdapter {
 

@@ -6,6 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
+import com.example.potatopaloozac.innertabproj.Adapters.PagerTop;
+
+/**
+ * Dragos Review
+ *  - code looks good
+ *  - group fragments in packages for easier read of app structure
+ *  - maybe rethink variables naming (instead of bottom and top just tabs and sub-tabs)
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
